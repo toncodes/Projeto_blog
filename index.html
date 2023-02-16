@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Blog</title>
 </head>
+
 <body>
-  
+
+  <header class="head">
+    <nav class="center">
+      <ul class="menu-flex">
+        <li>Inicio</li>
+        <li>Categorias</li>
+        <li>Posts</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+  </header>
+
+  <button>Novo Post</button>
+
+  <section>
+      <div class="desativo">
+        
+    <fieldset>
+      <legend>Inserir um novo post</legend>
+
+      <div>
+        <input id="titleField" placeholder="Título do post">
+      </div>
+
+      <div>
+        <textarea id="bodyField"></textarea>
+      </div>
+
+      <div>
+        <button id="insertButton">Inserir</button>
+      </div>
+    </fieldset>
+      </div>
+  </section>
+
+  <main>
+
+    <h1>Blog</h1>
+
+    <div class="posts"></div>
+  </main>
+
+
+
+
+
+  <script src="script.js"></script>
+
+
 </body>
+
 </html>
