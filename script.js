@@ -17,13 +17,22 @@ async function readPosts(){
   }
 }
 
+var post = document.querySelector('div')
+function clicar(){  
+  post.classList.remove('desativo')
+  post.classList.add('ativo')
+}
+function cancel(){
+  post.classList.remove('ativo')
+  post.classList.add('desativo')
+}
 
-document.querySelector('button').addEventListener('click', () => {
+/*document.querySelector('button').addEventListener('click', () => {
 
   let form = document.querySelector('div')
   form.classList.remove('desativo')
   form.classList.add('ativo')
-})
+})*/
 
 async function addNewPost(title, body) {
   await fetch('', {

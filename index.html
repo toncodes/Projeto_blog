@@ -22,7 +22,7 @@
     </nav>
   </header>
 
-  <button>Novo Post</button>
+  <button id="newPost" onclick="clicar()">Novo Post</button>
 
   <section>
       <div class="desativo">
@@ -31,7 +31,7 @@
       <legend>Inserir um novo post</legend>
 
       <div>
-        <input id="titleField" placeholder="Título do post">
+        <input id="titleField" placeholder="Título do post" >
       </div>
 
       <div>
@@ -40,6 +40,7 @@
 
       <div>
         <button id="insertButton">Inserir</button>
+        <button id='cancel' onclick="cancel()"> Cancelar</button>
       </div>
     </fieldset>
       </div>
